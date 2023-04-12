@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+* body {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    grid-template-rows: 3fr 20fr;
+}
+
+img {
+    height: 25px;
+}
+
+img:hover {
+    background-color: rgb(184, 175, 165);
+    border-radius: 20px;
+}
+
+.header {
+    background-color: antiquewhite;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: grid;
+}
+
+.headline {
+    font-family: 'Courier New', Courier, monospace;
+    justify-self: center;
+    align-self: center;
+    color: rgb(0, 0, 0);
+}
+
+#form {
+    display: grid;
+    justify-items: center;
+}
+
+
+
+
+
+.tcontainer {
+    background-color: rgb(250, 240, 226);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    position: relative;
+    box-shadow: inset 0px 5px 5px 0px gray;
+    max-height: 1fr; /* or any other maximum height you want */
+}
+
+table {
+    margin-top: 50px;
+    border-collapse: collapse;
+    justify-self: center;
+    max-height: 30px;
+}
+
+td, th {
+    border: 1px solid #000000;
+    text-align: left;
+}
+
+
+.testing {
+    height: 62vh;
+    width: 42vw;
+    justify-self: center;
+    align-self: flex-start;
+    margin-top: 50px;
+    background-color: rgb(250, 231, 207);
+    position: absolute;
+    z-index: 1;
+    box-shadow: 0px 0px 20px 0px gray;
+    display: grid;
+    grid-template-columns: 1r;
+    grid-template-rows: 1fr 5fr 1fr;
+}
+
+#closetestdiv {
+    padding: 5px;
+    justify-self: flex-end;
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+
+.display {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    justify-self: center;
+    align-self: center;
+    font-size: 3em;
+}
+
+
+
+
+.sidebar {
+    font-family: 'Courier New', Courier, monospace;
+    grid-column: 1/2;
+    grid-row:1/3;
+    background-color: rgb(93, 139, 139);
+    color: #ffffff;
+    padding: 10px
+}
+
+.group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+#tableList {
+    margin-top: 25px;
+}
+
+.group {
+    display: grid;
+    padding: 5px;
+}
+
+.reference {
+    align-self: center;
+}
+.group:hover{
+    background-color: rgb(90, 89, 88);
+}
+
+#trash {
+    justify-self: end;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/jspdf@latest/dist/jspdf.umd.min.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <title>Mnemo</title>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Stored Tables</h2>
+        <div id="tableList">
+            <div class="group" id="newt">
+                <div class="reference">New table</div>
+                <img src="/img/plus.svg" alt="plus" id="trash">
+            </div>
+        </div>
+    </div>
+    <div class="header">
+        <h1 class="headline">Vocab-Library</h1>
+        <form class="add-row" id="form">
+            <div class="input">
+                <label for="cell1">Item 1:</label>
+                <input type="text" class="cell1" required>
+
+                <label for="cell2">Item 2:</label>
+                <input type="text" class="cell2" required>
+                <input type="submit" style="visibility: hidden;" id="addimg"/>
+            </div>
+            <div class="btns">
+                <img src="/img/plus-box-multiple.svg" id="adding" title="add row">
+                <img src="/img/minus-box-multiple.svg" id="delete" title="delete last row">
+                <img src="/img/download.svg" id="browserPrint" title="download pdf">
+                <img src="/img/plus.svg" id="clearTable" title="add to library">
+                <img src="/img/ab-testing.svg" id="testing" title="testing table">
+            </div>
+        </form>
+    </div>
+    <div class="tcontainer">
+        <table id="table">
+            <tr>
+                <th>Item 1</th>
+                <th>Item 2</th>
+            </tr>
+        </table>
+    </div>
+    <script src="code.js" defer></script>
+</body>
+</html>
